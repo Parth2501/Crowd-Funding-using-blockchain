@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "dev": "node server.js",
+    "build": "next build",
+    "heroku-postbuild": "npm run build",
     "start": "node server.js"
   },
   "author": "",
