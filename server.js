@@ -5,9 +5,9 @@ const handler = routes.getRequestHandler(app)
 const {createServer} = require('http')
 
 app.prepare().then(() => {
-  createServer(handler).listen(3000,(err)=>{
+  createServer(handler).listen(process.env.PORT,(err)=>{
         if(err)
             throw err;
-        console.log('server started on port 3000')
+        console.log('server started')
   })
 })
